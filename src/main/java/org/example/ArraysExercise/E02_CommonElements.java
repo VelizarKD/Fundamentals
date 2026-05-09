@@ -7,10 +7,10 @@ public class E02_CommonElements {
         Scanner scanner = new Scanner(System.in);
 
         String firstLine = scanner.nextLine();
-        String secndLine = scanner.nextLine();
+        String secondLine = scanner.nextLine();
 
         String [] firstArr = firstLine.split(" ");
-        String [] secondArr = secndLine.split(" ");
+        String [] secondArr = secondLine.split(" ");
 
         for (String secondElement : secondArr) {
             for (String firstElement : firstArr) {
