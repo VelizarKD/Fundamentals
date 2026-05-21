@@ -1,6 +1,5 @@
 package org.example.Methods;
 
-import java.beans.Introspector;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
