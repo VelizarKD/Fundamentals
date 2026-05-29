@@ -12,9 +12,7 @@ public class E02_VowelsCount {
     }
 
     private static void printVowelsCount(String text) {
-
         int count = 0;
-
         for (int index = 0; index <= text.length() - 1; index++) {
             char currentSymbol = text.charAt(index);
             if (currentSymbol == 'a' || currentSymbol == 'e'
