@@ -25,6 +25,8 @@ public class E02_GaussTrick {
 
 
         }
+        //this can replace method: joinElementsByDelimiter
+        //System.out.println(numList.toString().replaceAll("[\\[\\],]", ""));
 
         System.out.println(joinElementsByDelimiter(numList, " "));
     }
