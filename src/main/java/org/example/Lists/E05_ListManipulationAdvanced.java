@@ -13,13 +13,13 @@ public class E05_ListManipulationAdvanced {
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
 
-        String input = scanner.nextLine();
+        String command = scanner.nextLine();
 
-        while (!input.equals("end")) {
-            List<String> commandLine = Arrays.stream(input.split(" ")).collect(Collectors.toList());
-            String command = commandLine.get(0);
+        while (!command.equals("end")) {
+            List<String> commandLine = Arrays.stream(command.split(" ")).collect(Collectors.toList());
+            String commandName = commandLine.get(0);
 
-            switch (command) {
+            switch (commandName) {
                 case "Contains":
                     int containsNumber = Integer.parseInt(commandLine.get(1));
                     if (numbersList.contains(containsNumber)) {
@@ -42,7 +42,7 @@ public class E05_ListManipulationAdvanced {
                     break;
             }
 
-            input = scanner.nextLine();
+            commandName = scanner.nextLine();
         }
         System.out.println();
     }
