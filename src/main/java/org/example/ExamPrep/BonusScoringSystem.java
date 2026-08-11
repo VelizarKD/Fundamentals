@@ -16,7 +16,7 @@ public class BonusScoringSystem {
 
         for (int i = 0; i < countOfStudents; i++) {
             int attendances = Integer.parseInt(scanner.nextLine());
-            totalBonus = (double) attendances / countOfLectures * (5 + initialBonus);
+            totalBonus =  attendances * 1.0 / countOfLectures * (5 + initialBonus);
 
             if (totalBonus > maxPoints) {
                 maxPoints = totalBonus;
@@ -25,7 +25,7 @@ public class BonusScoringSystem {
                 maxAttendances = attendances;
             }
         }
-        System.out.printf("Max Bonus: %d.%n", Math.round(maxPoints));
+        System.out.printf("Max Bonus: %.0f.%n", Math.ceil(maxPoints));
         System.out.printf("The student has attended %d lectures.", maxAttendances);
     }
 }
