@@ -11,7 +11,7 @@ public class E04_Songs {
         String time;
 
         public String getTypeList() {
-            return typeList;
+            return this.typeList;
         }
 
         public Song setTypeList(String typeList) {
@@ -20,7 +20,7 @@ public class E04_Songs {
         }
 
         public String getName() {
-            return name;
+            return this.name;
         }
 
         public Song setName(String name) {
@@ -29,7 +29,7 @@ public class E04_Songs {
         }
 
         public String getTime() {
-            return time;
+            return this.time;
         }
 
         public Song setTime(String time) {
