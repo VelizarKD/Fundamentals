@@ -31,7 +31,7 @@ public class Main {
                     break;
             }
         }
-        String print = article.toString();
-        System.out.println(print);
+
+        System.out.println(article);
     }
 }
