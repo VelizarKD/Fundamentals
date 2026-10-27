@@ -24,7 +24,7 @@ public class Main {
             }
         }
 
-        personList.sort(Comparator.comparing(Person :: getName));
+        personList.sort(Comparator.comparing(Person::getName));
 
         for (Person person : personList) {
             System.out.println(person.getName() + " - " + person.getAge());
